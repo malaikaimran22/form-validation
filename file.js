@@ -39,7 +39,15 @@ if (password !== confirm) {
 
 if(!isValid){
     event.preventDefault();
+}else {
+    
+    event.preventDefault();
+    localStorage.setItem('username', username);
+    localStorage.setItem('email', email);
+    localStorage.setItem('password',password)
+    window.open('user.html');
 }
+
 
 
 });
